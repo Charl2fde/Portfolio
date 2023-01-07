@@ -4,6 +4,11 @@
     font-family: 'courier';    
 }
 
+@font-face {
+    font-family: 'Signature';
+    src: url(/fonts/Signature.otf) format("opentype");
+}
+
 /* barre progressive */
 
 
@@ -83,6 +88,8 @@ p{
     font-family : 'Signature';
     font-size: 130px;
 }
+
+
 
 /* body */
 
