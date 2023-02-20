@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: 'Signature';
-    src: url(/fonts/Signature.otf) format("opentype");
+    font-family: 'signature';
+    src: url(./fonts/Signature.otf);
 }
 
 /* barre progressive */
@@ -51,7 +51,6 @@ header nav ul li a:hover{
 
 header nav ul li {
     font-size: 18px;
-    
     border: 1px rgb(255, 255, 255, .1) solid;
 }
 
@@ -75,20 +74,42 @@ header nav ul li a{
     width: 100%;
 }
 
+.mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 320px;
+}
+
+
 p{
     text-align: center;
     font-size: 60px;
     color: white;
     padding-top: 320px;
-    padding-bottom: 320px;
+    padding-bottom: 0px;
 }
 
 .c2fde{
     color: #EB0000;
-    font-family : 'Signature';
+    font-family : 'signature';
     font-size: 130px;
 }
 
+.transparent-button {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.transparent-button:hover{
+    color: rgba(255, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
 
 
 /* body */
