@@ -3,24 +3,9 @@
     font-family: 'courier';    
 }
 
-@font-face {
-    font-family: 'signature';
-    src: url(./fonts/Signature.otf);
+hr{
+    width: 10%;
 }
-
-/* barre progressive */
-
-#progressBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 4px;
-    background-color: rgb(255, 0, 0);
-    z-index: 9999;
-    transition: width 0.3s ease;
-}
-  
 
 /* Nav barre */
 
@@ -84,45 +69,43 @@ header nav ul li a{
     width: 100%;
 }
 
-.mid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 320px;
+
+section{
+    margin: 0% 8%;
+    padding: 10px 2%;  
 }
 
-
-p{
-    text-align: center;
-    font-size: 60px;
-    color: white;
-    padding-top: 320px;
-    padding-bottom: 0px;
+#profil{
+    margin-bottom: 20px;
+    font-size: 35px;
 }
 
-.c2fde{
-    color: #EB0000;
-    font-family : 'signature';
-    font-size: 130px;
+.profil{
+    background: rgb(223, 223, 223);
+    margin-top: 5%;
 }
 
-.transparent-button {
-    border: 1px solid white;
-    background: transparent;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
+.experience{
+    background: rgb(223, 223, 223);
 }
 
-.transparent-button:hover{
-    color: rgba(255, 0, 0);
-    background-color: rgba(255, 255, 255, 0.2);
-    cursor: pointer;
+.projets{
+    background: rgb(223, 223, 223);
+}
+
+.qualites{
+    background: rgb(223, 223, 223);
+}
+
+.CV{
+    background: rgb(223, 223, 223);
+    margin-bottom: 5%;
 }
 
 
 /* body */
+
+
 
 /* footer */
 
@@ -130,7 +113,7 @@ footer{
     display: flex;
     justify-content: right;
     align-items: center;
-    background: rgb(0, 0, 0, .7) ;
+    background: rgba(0, 0, 0, 0.7) ;
     border-top: 1px solid;
     border-color: rgb(255, 255, 255, .9);
     height: 80px;
