@@ -27,7 +27,7 @@
 header{
     height: 80px;
     width: 100%;
-    background: rgb(0, 0, 0, .5) ;
+    background: rgb(0, 0, 0) ;
     border-bottom: 1px solid;
     border-color: rgb(255, 255, 255, .9);
 }
@@ -131,7 +131,7 @@ footer{
     display: flex;
     justify-content: right;
     align-items: center;
-    background: rgb(0, 0, 0, .7) ;
+    background: rgb(0, 0, 0) ;
     border-top: 1px solid;
     border-color: rgb(255, 255, 255, .9);
     height: 80px;
