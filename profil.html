@@ -24,50 +24,54 @@
             </nav>
         </header>
         <!-- nav barre -->
-
+        <div id="progressBar2"></div>
         <!-- corps -->
         <main>
-            <div class="corps">
-                <section class="profil">
-                    <h2 id="profil">Profil</h2>
-                    <div class="propos">
-                        <h3>- A propos de moi</h3>
-                        <p>Je m'appelle Charles de feligonde, j'ai 19 ans, je suis étudiant à l'EPSI - Paris La Défense. Je 
-                            suis en deuxième année du programme Socle Numérique que propose l'EPSI avec option BTS SIO (Services
-                            Informatiques aux Organisations) avec la spécialité SLAM (Solutions Logicielles et Applications Métier). </p>
+            <h2 id="profil">Profil</h2>
+            <section class="profil">               
+                <h3>- A propos de moi</h3>
+                    <div class="txtprofil">
+                    <p>Je m'appelle Charles de feligonde, j'ai 19 ans, je suis étudiant à l'EPSI - Paris La Défense. Je 
+                        suis en deuxième année du programme Socle Numérique que propose l'EPSI avec option BTS SIO (Services
+                        Informatiques aux Organisations) avec la spécialité SLAM (Solutions Logicielles et Applications Métier).
+                        Plus jeune, jamais je n'aurai pensé entrer dans ce domaine et c'est en dernière année de lycée général, par manque d'idée pour mon avenir,
+                        que l'idée de me tourner vers ce domaine m'est venue. Aujourd'hui, c'est grâce à ma curiosité et ma créativité que mes choix m'ont amenés
+                        vers le développement.</p>
+                        <img class="Charles" src="./image/charles.jpg" alt="charles">
                     </div>
-                </section>
-                <section class="experience">
-                    <h3>- Expériences professionnelles</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta delectus eaque accusamus. 
-                        Sit enim laudantium, officiis id reiciendis ullam magni ipsum cupiditate mollitia! Pariatur 
-                        lit optio deserunt.</p>
-                </section>
-                <section class="projets">
-                    <h3>- Projets professionnelles</h3>
-                    <ul>
-                        <li>rrrrrrrrrrrrrr</li>
-                        <li>rrrrrrrrrrrrrrrrr</li>
-                        <li>rrrrrrrrrrrrrrrrrr</li>
-                    </ul>
-                </section>
-                <section class="qualites">
-                    <h3>- Compétences</h3>
-                    <ul>
-                        <li>rrrrrrrrrrrrrr</li>
-                        <li>rrrrrrrrrrrrrrrrr</li>
-                        <li>rrrrrrrrrrrrrrrrrr</li>
-                    </ul>
-                </section>
-                <section class="CV">
-                    <h3>- Mon CV</h3>
-                </section>
-            </div>
-            </main>
+            </section>
+            <section class="experience">
+                <h3>- Expériences professionnelles</h3>
+                <p>J'ai pu effectuer un stage d'un mois dans une association lors de ma première année d'études. Ce stage s'est déroulé 
+                    au sein de l'association <a class="soleild" href="https://soleildenfance.com/">Soleil d'Enfance</a> durant lequel j'ai pu faire une refonte du site. Refonte des fonctionnalités, 
+                    le design, les informations, et le moderniser afin d'améliorer au maximum l'expérience utilisateur.
+                </p>
+            </section>
+            <section class="projets">
+                <h3>- Projets </h3>
+                <ul id="ul-projet">
+                    <li id="li-projet">rrrrrrrrrrrrrr</li>
+                    <li id="li-projet">rrrrrrrrrrrrrr</li>
+                    <li id="li-projet">rrrrrrrrrrrrrr</li>
+                </ul>
+            </section>
+            <section class="competences">
+                <h3>- Compétences</h3>
+                <ul>
+                    <li><progress value="50" max="100"></progress></li>
+                    <li><progress value="50" max="100"></progress></li>
+                    <li><progress value="50" max="100"></progress></li>
+                </ul>
+            </section>
+            <section class="CV">
+                <h3>- Mon CV</h3>
+            </section>
+        </main>
             <!-- corps -->
             <footer>
                 <p>&copy; 2022 | Tous droits réservés. </p>
             </footer>
         </div>
+        <script src="script.js" defer></script>
 </body>
 </html>

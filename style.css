@@ -16,7 +16,7 @@
     left: 0;
     width: 0;
     height: 4px;
-    background-color: rgb(255, 0, 0);
+    background-image: linear-gradient(to right, #ffffff, #ff0000);
     z-index: 9999;
     transition: width 0.3s ease;
 }
@@ -81,6 +81,7 @@ header nav ul li a{
     background: url(image/informatique.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
 }
 
