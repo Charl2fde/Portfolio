@@ -452,7 +452,7 @@ img{
 }
 
 .flip-card-back {
-    line-height: 30px;
+    line-height: auto;
     color: black;
     transform: rotateY(180deg);
 }
