@@ -10,16 +10,35 @@
 
 /* Nav barre */
 
+img{
+    max-width: 270px;
+}
+
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, #ffffff, #ff0000);
+    z-index: 9999;
+    transition: width 0.3s ease;
+}
+  
+
+/* Nav barre */
+
+.logo{
+    width: 270px;
+    height: auto;
+}
+
 header{
     height: 80px;
     width: 100%;
     background: rgb(0, 0, 0) ;
     border-bottom: 1px solid;
     border-color: rgb(255, 255, 255, .9);
-}
-
-.logo{
-    width: 270px;
 }
 
 header h1{
@@ -61,6 +80,7 @@ header nav ul li a{
     margin: 0px; 
     display: block;
     padding: 30px 40px;
+ 
 }
 
 /* fin nav barre */
@@ -454,6 +474,7 @@ img{
 .flip-card-back {
     line-height: auto;
     color: black;
+    text-align:start;
     transform: rotateY(180deg);
 }
 
