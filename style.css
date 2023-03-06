@@ -10,8 +10,9 @@
 
 /* barre progressive */
 
-img{
-    max-width: 270px;
+.logo{
+    width: 270px;
+    height: auto;
 }
 
 #progressBar {
