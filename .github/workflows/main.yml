@@ -12,5 +12,5 @@ jobs:
       with:
         server: files.000webhost.com
         username: legendarym
-        password: 7KtJ%EdVDzhU%*x(Hhkv
+        password: Chatelard0300
         server-dir : public_html/
