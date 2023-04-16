@@ -35,9 +35,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Affiche un message de confirmation
     echo "Votre message a été envoyé avec succès.";
 
-    header("Location: index.html");
-        exit();
-    } else {
-        echo "Erreur: " . $sql . "<br>" . $conn->error;
-    }
+    // Adresse email du destinataire
+$to = "charlesdefde@gmail.com";
+
+// Sujet de l'email
+$subject = "Nouveau message depuis le formulaire de contact";
+
+// Corps de l'email
+$message = "Nom : " . $nom . "\n";
+$message .= "Prénom : " . $prenom . "\n";
+$message .= "Email : " . $email . "\n";
+$message .= "Téléphone : " . $telephone . "\n";
+$message .= "Message : " . $message . "\n";
+
+// Entêtes de l'email
+$headers = "From: adresse-email-de-l-expediteur@example.com" . "\r\n" .
+"Reply-To: adresse-email-de-l-expediteur@example.com" . "\r\n" .
+"X-Mailer: PHP/" . phpversion();
+
+// Envoi de l'email
+mail($to, $subject, $message, $headers);
+   
 ?>
