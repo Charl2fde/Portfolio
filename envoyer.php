@@ -31,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindParam(':telephone', $telephone);
     $stmt->bindParam(':message', $message);
     $stmt->execute();
+}
 
     // Affiche un message de confirmation
     echo "Votre message a été envoyé avec succès.";
