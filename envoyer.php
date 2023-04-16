@@ -33,28 +33,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->execute();
 
     // Adresse email du destinataire
-    $to = "charlesdefde@gmail.com";
+$to = "charlesdefde@gmail.com";
 
-    // Sujet de l'email
-    $subject = "Nouveau message depuis le formulaire de contact";
+// Sujet de l'email
+$subject = "Nouveau message depuis ton Portfolio !";
 
-    // Corps de l'email
-    $email_body = "Nom : " . $nom . "\n";
-    $email_body .= "Prénom : " . $prenom . "\n";
-    $email_body .= "Email : " . $email . "\n";
-    $email_body .= "Téléphone : " . $telephone . "\n";
-    $email_body .= "Message : " . $message . "\n";
+// Corps de l'email
+$email_body = "Nom : " . $nom . "\n";
+$email_body .= "Prénom : " . $prenom . "\n";
+$email_body .= "Email : " . $email . "\n";
+$email_body .= "Téléphone : " . $telephone . "\n";
+$email_body .= "Message : " . $message . "\n";
 
-    // Entêtes de l'email
-    $headers = "From: " . $email . "\r\n" .
-    "Reply-To: " . $email . "\r\n" .
-    "X-Mailer: PHP/" . phpversion();
+// Entêtes de l'email
+$headers = "From: " . $email . "\r\n" . // remplace l'adresse email de l'expéditeur
+"Reply-To: " . $email . "\r\n" .
+"X-Mailer: PHP/" . phpversion();
 
-    // Envoi de l'email
-    if(mail($to, $subject, $email_body, $headers)) {
-        echo "Votre message a été envoyé avec succès.";
-    } else {
-        echo "Une erreur est survenue lors de l'envoi de votre message.";
-    }
+// Envoi de l'email
+if(mail($to, $subject, $email_body, $headers)) {
+    echo "Votre message a été envoyé avec succès.";
+} else {
+    echo "Une erreur est survenue lors de l'envoi de votre message.";
+}
 }
 ?>
