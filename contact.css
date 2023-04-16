@@ -173,7 +173,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
 	outline: none;
-	border-bottom-color: #333333;
+	border-bottom-color: #ff0000;
 }
 
 input[type="submit"] {
