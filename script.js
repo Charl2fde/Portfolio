@@ -25,3 +25,4 @@ const downloadLinks = document.querySelectorAll("[data-download]");
       a.download = "";
       a.style.display = "none";
   })
+
