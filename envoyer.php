@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body .= "Message : " . $message . "\n";
 
     // Entêtes de l'email
-    $headers = "From: adresse-email-de-l-expediteur@example.com" . "\r\n" .
+    $headers = "From: " . $email . "\r\n" .
     "Reply-To: " . $email . "\r\n" .
     "X-Mailer: PHP/" . phpversion();
 
