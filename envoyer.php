@@ -50,9 +50,9 @@ $message .= "Téléphone : " . $telephone . "\n";
 $message .= "Message : " . $message . "\n";
 
 // Entêtes de l'email
-$headers = "From: adresse-email-de-l-expediteur@example.com" . "\r\n" .
-"Reply-To: adresse-email-de-l-expediteur@example.com" . "\r\n" .
-"X-Mailer: PHP/" . phpversion();
+// $headers = "From: adresse-email-de-l-expediteur@example.com" . "\r\n" .
+// "Reply-To: adresse-email-de-l-expediteur@example.com" . "\r\n" .
+// "X-Mailer: PHP/" . phpversion();
 
 // Envoi de l'email
 mail($to, $subject, $message, $headers);
