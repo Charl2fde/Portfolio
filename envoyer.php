@@ -34,5 +34,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Affiche un message de confirmation
     echo "Votre message a été envoyé avec succès.";
-}
+
+    header("Location: index.html");
+        exit();
+    } else {
+        echo "Erreur: " . $sql . "<br>" . $conn->error;
+    }
 ?>
