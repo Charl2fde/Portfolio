@@ -360,7 +360,7 @@ ul{
     background-image: linear-gradient(to right, #FF5733, #C70039);
     border: #ffffff solid 1px;
     border-radius: 5px;
-    width: 18%;
+    width: 10%;
     height: 10px;
 }
 
@@ -387,7 +387,7 @@ ul{
     background-image: linear-gradient(to right, #FF5733, #C70039);
     border: #ffffff solid 1px;
     border-radius: 5px;
-    width: 40%;
+    width: 25%;
     height: 10px;
 }
 
@@ -540,7 +540,7 @@ footer{
     display: flex;
     justify-content: right;
     align-items: center;
-    background: rgba(0, 0, 0, .7) ;
+    background: rgb(0, 0, 0) ;
     border-top: 1px solid;
     border-color: rgb(255, 255, 255, .9);
     height: 80px;
