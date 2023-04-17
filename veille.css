@@ -101,28 +101,26 @@ header nav ul li a {
 
 /* titre  */
 
+
 /* corps */
 
 main {
-	max-width: 800px;
-	margin: auto;
-	padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
 	text-align: justify;
 }
 
 main h2 {
     font-family: 'poppinss';
 	color: #ffffff;
-	margin-top: 30px;
-	margin-bottom: 20px;
 	font-size: 1.5em;
+    margin-bottom: 30px;
 	font-weight: bold;
 }
 
 main p {
     font-family: 'poppinss';
-	margin-bottom: 20px;
 }
+
 
 
 /* corps */
