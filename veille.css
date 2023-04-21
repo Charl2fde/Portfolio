@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: 'courier';
+    font-family: 'poppinss';
 }
 
 @font-face {
@@ -67,7 +67,7 @@ header nav ul li a {
     margin: 0px;
     display: block;
     padding: 30px 40px;
-
+    font-family:'courier';
 }
 
 /* fin nav barre */
@@ -97,33 +97,168 @@ header nav ul li a {
     font-size: 50px;
     color: white;
     text-shadow: 0px 0px 20px #fff;
+    font-family:'courier';
 }
 
 /* titre  */
 
 
-/* corps */
+/*---- ---------corps---------------- */
 
-main {
-    background: rgba(255, 255, 255, 0.5);
-	text-align: justify;
-}
-
-main h2 {
+.Veille {
+    padding: 80px;
+    background-color: #F2F2F2;
     font-family: 'poppinss';
-	color: #ffffff;
-	font-size: 1.5em;
+  }
+  
+  .Veille h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
     margin-bottom: 30px;
-	font-weight: bold;
-}
-
-main p {
+  }
+  
+  .Veille p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #666666;
+  }
+  
+  /* Style de l'Introduction */
+  .Introduction {
+    padding: 80px;
+    background-color: #FFFFFF;
     font-family: 'poppinss';
-}
+  }
+  
+  .Introduction h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+  
+  .Introduction h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .Introduction p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #666666;
+    margin-bottom: 20px;
+  }
 
+/* 1ère partie */
 
+.partie1 {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'poppinss';
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+  
+  .partie1 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .partie1 h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .partie1 p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
 
-/* corps */
+  /* 2ème partie  */
+
+  .partie2 {
+    background-color: #F5F5F5;
+    padding: 50px;
+    font-family: 'poppinss';
+    }
+    
+    .partie2 h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .partie2 h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #008080;
+    }
+    
+    .partie2 p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    }
+
+/* 3ème partie  */
+
+.partie3 {
+    background-color: #F5F5F5;
+    padding: 20px;
+    font-family: 'poppinss';
+    }
+    
+    .partie3 h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+    
+    .partie3 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    }
+    
+    .partie3 p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    }
+
+/* conclusion  */
+
+.conclusion {
+    padding: 20px;
+    background-color: #f2f2f2;
+    }
+    
+    .conclusion h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+    
+    .conclusion p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    }
+
+/* --------------corps------------- */
 
 
 
