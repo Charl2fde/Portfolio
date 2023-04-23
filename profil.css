@@ -437,15 +437,6 @@ ul{
     justify-content: space-around;
 }
 
-.flip-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border-bottom: #000000 solid 1px;
-    padding:10px 35px;
-}
-
 img{
     width: 200px;
     height: 200px;
@@ -458,7 +449,6 @@ img{
   border-bottom: #000000 solid 1px;
   margin: 0px 15px;
   perspective: 800px; 
-  text-align: justify;
 }
 
 .flip-card-inner {
@@ -485,7 +475,7 @@ img{
 .flip-card-back {
     line-height: auto;
     color: black;
-    text-align:start;
+    text-align:justify;
     transform: rotateY(180deg);
 }
 
