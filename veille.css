@@ -1,73 +1,73 @@
 * {
-    margin: 0;
-    font-family: 'poppinss';
+  margin: 0;
+  font-family: 'poppinss';
 }
 
 @font-face {
-    font-family: 'poppins';
-    src: url(./fonts/Poppins/Poppins-Italic.ttf);
+  font-family: 'poppins';
+  src: url(./fonts/Poppins/Poppins-Italic.ttf);
 }
 
 @font-face {
-    font-family: 'poppinss';
-    src: url(./fonts/Poppins/Poppins-Light.ttf);
+  font-family: 'poppinss';
+  src: url(./fonts/Poppins/Poppins-Light.ttf);
 }
 
 /* Nav barre */
 
 .logo {
-    width: 270px;
-    height: auto;
+  width: 270px;
+  height: auto;
 }
 
 header {
-    height: 80px;
-    width: 100%;
-    background: rgb(0, 0, 0);
-    border-bottom: 1px solid;
-    border-color: rgb(255, 255, 255, .9);
+  height: 80px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  border-bottom: 1px solid;
+  border-color: rgb(255, 255, 255, .9);
 }
 
 header h1 {
-    color: rgb(255, 255, 255);
-    margin-left: 20px;
-    font-size: 33px;
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  font-size: 33px;
 }
 
 header nav {
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 header nav ul li:hover {
-    background: rgba(255, 255, 255, 0.5);
-    transition: 0.6s;
+  background: rgba(255, 255, 255, 0.5);
+  transition: 0.6s;
 }
 
 header nav ul li a:hover {
-    color: rgba(255, 0, 0);
+  color: rgba(255, 0, 0);
 }
 
 header nav ul li {
-    font-size: 18px;
-    border: 1px rgb(255, 255, 255, .1) solid;
+  font-size: 18px;
+  border: 1px rgb(255, 255, 255, .1) solid;
 }
 
 header nav ul li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 0px;
-    display: block;
-    padding: 30px 40px;
-    font-family:'courier';
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  display: block;
+  padding: 30px 40px;
+  font-family: 'courier';
 }
 
 /* fin nav barre */
@@ -76,11 +76,11 @@ header nav ul li a {
 /* background */
 
 .container {
-    background: url(image/informatique.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
+  background: url(image/informatique.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
 }
 
 /* background */
@@ -90,14 +90,14 @@ header nav ul li a {
 /* titre */
 
 #veilleNum {
-    background: rgba(0, 0, 0, 0.3);
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 50px;
-    color: white;
-    text-shadow: 0px 0px 20px #fff;
-    font-family:'courier';
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0px 0px 20px #fff;
+  font-family: 'courier';
 }
 
 /* titre  */
@@ -106,161 +106,223 @@ header nav ul li a {
 /*---- ---------corps---------------- */
 
 .Veille {
-    padding: 80px;
-    background-color: #F2F2F2;
-    font-family: 'poppinss';
-  }
-  
-  .pres{
-    font-size: 40px;
-    color: transparent;
-	  background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0) );
-	  -webkit-background-clip: text;
-	  background-clip: text;
-	  text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-    padding-bottom: 10px;
-    margin-right: 40%;
+  padding: 80px ;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  font-family: 'poppinss';
 }
-  
-  .Veille p {
-    font-size: 18px;
-    line-height: 30px;
-    color: #666666;
-  }
-  
-  /* Style de l'Introduction */
-  .Introduction {
-    padding: 80px;
-    background-color: #FFFFFF;
-    font-family: 'poppinss';
-  }
-  
-  .Introduction h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #333333;
-    margin-bottom: 30px;
-  }
-  
-  .Introduction h3 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333333;
-    margin-bottom: 20px;
-  }
-  
-  .Introduction p {
-    font-size: 18px;
-    line-height: 30px;
-    color: #666666;
-    margin-bottom: 20px;
-  }
+
+.pres {
+  font-size: 40px;
+  color: transparent;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+  margin-right: 40%;
+}
+
+.Veille p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #666666;
+}
+
+
+/* séparateur triangle */
+
+.custom-shape-divider-top-1682288821 {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1682288821 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 106px;
+}
+
+.custom-shape-divider-top-1682288821 .shape-fill {
+  fill: #ffffff;
+}
+
+
+/* Style de l'Introduction */
+
+.Introduction {
+  padding: 80px;
+  padding-top: 150px;
+  background-color: #F5F5F5;
+  font-family: 'poppinss';
+}
+
+.Introduction h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.Introduction h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.Introduction p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #666666;
+  margin-bottom: 20px;
+}
 
 /* 1ère partie */
 
 .partie1 {
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'poppinss';
-    background-color: #F5F5F5;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
-  }
-  
-  .partie1 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .partie1 h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .partie1 p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #555;
-  }
+  background-color: #ffffff;
+  padding: 50px;
+  font-family: 'poppinss';
+}
 
-  /* 2ème partie  */
+.partie1 h2 {
+  font-size: 40px;
+  color: transparent;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+  margin-right: 40%;
+}
 
-  .partie2 {
-    background-color: #F5F5F5;
-    padding: 50px;
-    font-family: 'poppinss';
-    }
-    
-    .partie2 h2 {
-        font-size: 32px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    
-    .partie2 h3 {
-    font-size: 1.5em;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #008080;
-    }
-    
-    .partie2 p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
-    }
+.partie1 h3 {
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #008080;
+}
+
+.partie1 p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* 2ème partie  */
+
+.partie2 {
+  background-color: #F5F5F5;
+  padding: 50px;
+  font-family: 'poppinss';
+}
+
+.partie2 h2 {
+  font-size: 40px;
+  color: transparent;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+  margin-right: 40%;
+}
+
+.partie2 h3 {
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #008080;
+}
+
+.partie2 p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
 
 /* 3ème partie  */
 
 .partie3 {
-    background-color: #F5F5F5;
-    padding: 20px;
-    font-family: 'poppinss';
-    }
-    
-    .partie3 h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    }
-    
-    .partie3 h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    }
-    
-    .partie3 p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-    }
+  background-color: #ffffff;
+  padding: 50px;
+  padding-bottom: 20px;
+  font-family: 'poppinss';
+}
+
+.partie3 h2 {
+  font-size: 40px;
+  color: transparent;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+  margin-right: 40%;
+}
+
+.partie3 h3 {
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #008080;
+}
+
+.partie3 p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* vagues  */
+
+.custom-shape-divider-top-1682289504 {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1682289504 svg {
+  position: relative;
+  display: block;
+  width: calc(255% + 1.3px);
+  height: 106px;
+}
+
+.custom-shape-divider-top-1682289504 .shape-fill {
+  fill: #ffffff;
+}
 
 /* conclusion  */
 
 .conclusion {
-    padding: 20px;
-    background-color: #f2f2f2;
-    }
-    
-    .conclusion h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    }
-    
-    .conclusion p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    }
+  background-color: #F5F5F5;
+  padding: 50px;
+  padding-top: 120px;
+  font-family: 'poppinss';
+}
+
+.conclusion h3 {
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #008080;
+}
+
+.conclusion p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
 
 /* --------------corps------------- */
 
@@ -269,22 +331,22 @@ header nav ul li a {
 /* footer */
 
 footer {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    background: rgb(0, 0, 0);
-    border-top: 1px solid;
-    border-color: rgb(255, 255, 255, .9);
-    height: 80px;
-    width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  border-top: 1px solid;
+  border-color: rgb(255, 255, 255, .9);
+  height: 80px;
+  width: 100%;
 
 }
 
 footer p {
-    color: white;
-    margin-right: 30px;
-    padding: 0%;
-    font-size: 15px;
+  color: white;
+  margin-right: 30px;
+  padding: 0%;
+  font-size: 15px;
 }
 
 /* footer */
