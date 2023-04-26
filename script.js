@@ -1,3 +1,5 @@
+// bar de progression de la page
+
 window.addEventListener('scroll', function() {
     const scrollPosition = document.documentElement.scrollTop;
     const windowHeight = document.documentElement.clientHeight;
@@ -26,6 +28,7 @@ const downloadLinks = document.querySelectorAll("[data-download]");
       a.style.display = "none";
   })
 
+  // menu burger qui affiche le menu au clic
   const menuHamburger = document.querySelector(".menu-burger")
   const navLinks = document.querySelector("ul")
 
@@ -33,6 +36,7 @@ const downloadLinks = document.querySelectorAll("[data-download]");
   navLinks.classList.toggle('mobile-menu')
   })
 
+  // pas de scroll pendant que le menu burger est affiché
   const menuBurger = document.querySelector('.menu-burger');
 const body = document.querySelector('body');
 
