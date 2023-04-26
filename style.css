@@ -233,7 +233,8 @@ footer p{
 
     p{
         text-align: center;
-        font-size: 40px;
+        font-size: 50px;
+        line-height: 1.5;
         color: white;
         padding-top: 40%;
         padding-bottom: 0px;
@@ -246,7 +247,8 @@ footer p{
     .c2fde{
         color: #EB0000;
         font-family : 'signature';
-        font-size: 110px;
+        font-size: 150px;
+        line-height: 1;
     }
 
     .transparent-button {

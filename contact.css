@@ -290,36 +290,6 @@ footer p {
     
         /* corps */
     
-        .container{
-            background-position: center;
-        }
-    
-        p{
-            text-align: center;
-            font-size: 40px;
-            color: white;
-            padding-top: 40%;
-            padding-bottom: 0px;
-        }
-    
-        .mid{
-            padding-bottom: 40%;
-        }
-        
-        .c2fde{
-            color: #EB0000;
-            font-family : 'signature';
-            font-size: 110px;
-        }
-    
-        .transparent-button {
-            display: none;
-        }
-    
-        body.overflow-hidden{
-            overflow: hidden;
-        }
-        
     
         /* corps */
     }
