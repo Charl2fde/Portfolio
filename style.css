@@ -252,5 +252,10 @@ footer p{
         display: none;
     }
 
+    body.overflow-hidden{
+        overflow: hidden;
+    }
+    
+
     /* corps */
 }

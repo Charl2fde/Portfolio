@@ -33,3 +33,11 @@ const downloadLinks = document.querySelectorAll("[data-download]");
   navLinks.classList.toggle('mobile-menu')
   })
 
+  const menuBurger = document.querySelector('.menu-burger');
+const body = document.querySelector('body');
+
+menuBurger.addEventListener('click', function(){
+  body.classList.toggle('overflow-hidden');
+});
+
+
