@@ -26,3 +26,10 @@ const downloadLinks = document.querySelectorAll("[data-download]");
       a.style.display = "none";
   })
 
+  const menuHamburger = document.querySelector(".menu-burger")
+  const navLinks = document.querySelector("ul")
+
+  menuHamburger.addEventListener('click',()=>{
+  navLinks.classList.toggle('mobile-menu')
+  })
+
