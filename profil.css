@@ -15,10 +15,6 @@
 
 /* Nav barre */
 
-img{
-    max-width: 270px;
-}
-
 #progressBar {
     position: fixed;
     top: 0;
