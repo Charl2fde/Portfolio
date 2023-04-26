@@ -987,6 +987,7 @@ footer p {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    
 }
 
 .flip-card-back {
@@ -1041,6 +1042,8 @@ footer p {
     flex-direction: row;
     justify-content: space-around;
 }
-
+body.overflow-hidden{
+    overflow: hidden;
+}
     /* corps */
 }
