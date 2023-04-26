@@ -479,6 +479,11 @@ ul{
     transform: rotateY(180deg);
 }
 
+.img-quali{
+    width: 250px;
+    height: 250px;
+}
+
 
 /*------------------------------------------------ CV -------------------------------------- */
 .CV{
@@ -598,7 +603,7 @@ footer p{
             display: block;
             position: absolute;
             right: 5%;
-            top: 10%;
+            top: 1%;
             width: 100px;
             filter: invert(100%) sepia(100%) hue-rotate(180deg) saturate(500%);
         }
