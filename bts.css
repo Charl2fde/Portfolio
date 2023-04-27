@@ -1,21 +1,21 @@
-*{
+* {
     margin: 0;
-    font-family: 'courier';    
+    font-family: 'courier';
 }
 
-@font-face{
+@font-face {
     font-family: 'poppins';
     src: url(./fonts/Poppins/Poppins-Italic.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: 'poppinss';
     src: url(./fonts/Poppins/Poppins-Light.ttf);
 }
 
 /* Nav barre */
 
-img{
+img {
     max-width: 270px;
 }
 
@@ -29,30 +29,30 @@ img{
     z-index: 9999;
     transition: width 0.3s ease;
 }
-  
+
 
 /* Nav barre */
 
-.logo{
+.logo {
     width: 270px;
     height: auto;
 }
 
-header{
+header {
     height: 80px;
     width: 100%;
-    background: rgb(0, 0, 0) ;
+    background: rgb(0, 0, 0);
     border-bottom: 1px solid;
     border-color: rgb(255, 255, 255, .9);
 }
 
-header h1{
+header h1 {
     color: rgb(255, 255, 255);
     margin-left: 20px;
     font-size: 33px;
 }
 
-header nav{
+header nav {
     height: 80px;
     width: 100%;
     display: flex;
@@ -60,17 +60,17 @@ header nav{
     align-items: center;
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
     display: flex;
 }
 
-header nav ul li:hover{
+header nav ul li:hover {
     background: rgba(255, 255, 255, 0.5);
     transition: 0.6s;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: rgba(255, 0, 0);
 }
 
@@ -79,16 +79,16 @@ header nav ul li {
     border: 1px rgb(255, 255, 255, .1) solid;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    margin: 0px; 
+    margin: 0px;
     display: block;
     padding: 30px 40px;
- 
+
 }
 
-header .menu-burger{
+header .menu-burger {
     display: none;
     position: absolute;
     right: 5%;
@@ -118,7 +118,7 @@ header .menu-burger{
 
 /* body */
 
-.container{
+.container {
     background: url(image/informatique.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -126,28 +126,28 @@ header .menu-burger{
     width: 100%;
 }
 
-h3{
+h3 {
     font-family: 'poppinss';
 }
 
-h4{
+h4 {
     font-family: 'poppinss';
 }
 
-.container p{
+.container p {
     font-family: 'poppinss';
 }
 
 /* Présentation */
 
-hr{
+hr {
     width: 35px;
     height: 4px;
-    background:rgb(255, 0, 0);
+    background: rgb(255, 0, 0);
     margin-top: 65px;
 }
 
-h2{
+h2 {
     background: rgba(0, 0, 0, 0.3);
     text-align: center;
     padding-top: 50px;
@@ -157,30 +157,30 @@ h2{
     text-shadow: 0px 0px 20px #fff;
 }
 
-main{
+main {
     background-color: #fff;
 }
 
-.presentation{
+.presentation {
     display: flex;
     flex-direction: column;
     align-items: start;
     margin: 0px 260px;
 }
 
-.presentation p{
+.presentation p {
     text-indent: 50px;
     text-align: justify;
     padding-bottom: 120px;
 }
 
-.pres{
+.pres {
     font-size: 35px;
     color: transparent;
-	background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0) );
-	-webkit-background-clip: text;
-	background-clip: text;
-	text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     padding-bottom: 10px;
 }
 
@@ -188,7 +188,7 @@ main{
 
 /* OPTIONS BTS */
 
-.categories{
+.categories {
     display: flex;
     padding-bottom: 150px;
     padding-top: 120px;
@@ -217,44 +217,44 @@ main{
 
 /* background wave catégories */
 
-h3{
+h3 {
     font-size: 35px;
     color: transparent;
-	background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0) );
-	-webkit-background-clip: text;
-	background-clip: text;
-	text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     padding-bottom: 20px;
 }
 
-.SLAM{
+.SLAM {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 30px 0px 120px;
 }
 
-.SLAM h4{
+.SLAM h4 {
     padding-bottom: 10px;
 }
 
-.SLAM p{
+.SLAM p {
     text-align: center;
     line-height: 35px;
 }
 
-.SISR{
+.SISR {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 120px 0px 30px;
 }
 
-.SISR h4{
+.SISR h4 {
     padding-bottom: 10px;
 }
 
-.SISR p{
+.SISR p {
     text-align: center;
     line-height: 35px;
 }
@@ -263,11 +263,11 @@ h3{
 
 /* footer */
 
-footer{
+footer {
     display: flex;
     justify-content: right;
     align-items: center;
-    background: rgb(0, 0, 0) ;
+    background: rgb(0, 0, 0);
     border-top: 1px solid;
     border-color: rgb(255, 255, 255, .9);
     height: 80px;
@@ -275,7 +275,7 @@ footer{
 
 }
 
-footer p{
+footer p {
     color: white;
     margin-right: 30px;
     padding: 0%;
@@ -290,90 +290,168 @@ footer p{
 @media only screen and (max-width: 600px) {
 
     /* nav barre en colonne */
-    
-        .logo{
-            width: 200px;
-        }
-    
-        nav ul{
-            background: rgba(255, 255, 255, 0.5);
-            -webkit-backdrop-filter: blur(5px); /* pour Safari, iOS et d'autres navigateurs basés sur WebKit */
-            backdrop-filter: blur(5px); /* pour les autres navigateurs */
-            justify-content: center;
-            top: 0;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 100vh;
-            padding: 0%;
-            margin-left: -100%;
-            transition: all 0.5s ease;
-        }
-    
-        header nav ul li {
-            display: flex;
-            justify-content: center;
-            font-size: 34px;
-            border: none;
-        }
-        
-        header nav ul li a{
-            font-family: 'poppinss';
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            margin: 0px; 
-            display: block;
-            padding: 30px 40px;
-        }
-    
-        nav .mobile-menu{
-            margin-left: 0;
-        }
-    
-        header .menu-burger{
-            display: block;
-            position: absolute;
-            right: 5%;
-            top: 1%;
-            width: 100px;
-            filter: invert(100%) sepia(100%) hue-rotate(180deg) saturate(500%);
-        }
-    
-        /* fin nav barre */
-    
-        /* corps */
-    
-        .container{
-            background-position: center;
-        }
-    
-        p{
-            text-align: center;
-            font-size: 40px;
-            color: white;
-            padding-top: 40%;
-            padding-bottom: 0px;
-        }
-    
-        .mid{
-            padding-bottom: 40%;
-        }
-        
-        .c2fde{
-            color: #EB0000;
-            font-family : 'signature';
-            font-size: 110px;
-        }
-    
-        .transparent-button {
-            display: none;
-        }
-    
-        body.overflow-hidden{
-            overflow: hidden;
-        }
-        
-    
-        /* corps */
+
+    .logo {
+        width: 200px;
     }
+
+    nav ul {
+        background: rgba(255, 255, 255, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        /* pour Safari, iOS et d'autres navigateurs basés sur WebKit */
+        backdrop-filter: blur(5px);
+        /* pour les autres navigateurs */
+        justify-content: center;
+        top: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding: 0%;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    header nav ul li {
+        display: flex;
+        justify-content: center;
+        font-size: 34px;
+        border: none;
+    }
+
+    header nav ul li a {
+        font-family: 'poppinss';
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        margin: 0px;
+        display: block;
+        padding: 30px 40px;
+    }
+
+    nav .mobile-menu {
+        margin-left: 0;
+    }
+
+    header .menu-burger {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 1%;
+        width: 100px;
+        filter: invert(100%) sepia(100%) hue-rotate(180deg) saturate(500%);
+    }
+
+    /* fin nav barre */
+
+    /* corps */
+
+    /* body */
+
+    .container {
+        background: url(image/informatique.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: center;
+        background-attachment: fixed;
+        width: 100%;
+    }
+
+    /* Présentation */
+
+    hr {
+        width: 35px;
+        height: 4px;
+        background: rgb(255, 0, 0);
+        margin-top: 65px;
+    }
+
+    h2 {
+        background: rgba(0, 0, 0, 0.3);
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 50px;
+        color: white;
+        text-shadow: 0px 0px 20px #fff;
+    }
+
+    main {
+        background-color: #fff;
+    }
+
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 0px 50px;
+    }
+
+    .presentation p {
+        text-indent: 50px;
+        text-align: justify;
+        padding-bottom: 80px;
+    }
+
+    .pres {
+        font-size: 35px;
+        color: transparent;
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        padding-bottom: 10px;
+    }
+
+
+    h3 {
+        font-size: 35px;
+        color: transparent;
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        padding-bottom: 20px;
+    }
+
+    .SLAM {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 30px 50px 30px;
+    }
+
+    .SLAM h4 {
+        padding-bottom: 10px;
+    }
+
+    .SLAM p {
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .SISR {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 30px 0px 30px;
+    }
+
+    .SISR h4 {
+        padding-bottom: 10px;
+    }
+
+    .SISR p {
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        padding-top: 120px;
+        background: rgba(202, 202, 202, 0.7);
+    }
+    /* corps */
+}
