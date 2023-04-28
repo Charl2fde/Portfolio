@@ -458,7 +458,7 @@ footer p {
 
     .categories {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding-bottom: 50px;
         padding-top: 120px;
         background: rgba(202, 202, 202, 0.7);
