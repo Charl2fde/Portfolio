@@ -261,6 +261,7 @@ footer p {
     header nav ul li {
         display: flex;
         justify-content: center;
+        text-align: center;
         font-size: 34px;
         border: none;
     }
@@ -285,7 +286,6 @@ footer p {
         top: 1%;
         width: 100px;
         filter: invert(100%) sepia(100%) hue-rotate(180deg) saturate(500%);
-
     }
 
     /* fin nav barre */
