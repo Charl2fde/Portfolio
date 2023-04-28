@@ -413,8 +413,10 @@ footer p {
         background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
         -webkit-background-clip: text;
         background-clip: text;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
         padding-bottom: 20px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 
     .SLAM {
@@ -427,6 +429,7 @@ footer p {
     .SLAM h4 {
         padding-bottom: 10px;
         text-align: center;
+        
     }
 
     .SLAM p {
