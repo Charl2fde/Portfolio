@@ -453,5 +453,9 @@ footer p {
         padding-top: 120px;
         background: rgba(202, 202, 202, 0.7);
     }
+
+    body.overflow-hidden{
+        overflow: hidden;
+    }
     /* corps */
 }
