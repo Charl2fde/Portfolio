@@ -70,7 +70,7 @@ header nav ul li a {
 
 }
 
-header .menu-burger{
+header .menu-burger {
     display: none;
     position: absolute;
     right: 5%;
@@ -112,7 +112,7 @@ header .menu-burger{
 
 /* corps */
 
-.back{
+.back {
     background: rgba(255, 255, 255, 0.7);
     padding: 50px 0px;
 }
@@ -124,37 +124,37 @@ header .menu-burger{
 
 form {
     font-family: 'poppinss';
-	background-color: #FFFFFF;
-	padding: 30px;
-	border-radius: 5px;
-	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     margin: 0px 550px
 }
 
 h1 {
     font-family: 'poppinss';
-	text-align: center;
-	margin-bottom: 20px;
-	color: #333333;
-	font-weight: 700;
-	font-size: 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .form-group {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 label {
     font-family: 'poppinss';
-	display: block;
-	margin-bottom: 5px;
-	color: #333333;
-	font-weight: 500;
-	font-size: 14px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 input[type="text"],
@@ -162,45 +162,45 @@ input[type="email"],
 input[type="tel"],
 textarea {
     font-family: 'poppinss';
-	display: block;
-	width: 95%;
-	padding: 15px 20px;
-	border: none;
-	border-radius: 0;
-	border-bottom: 2px solid #CCCCCC;
-	background-color: transparent;
-	color: #333333;
-	font-size: 14px;
-	font-weight: 500;
-	letter-spacing: 1px;
-	transition: all 0.3s ease-in-out;
-	resize: none; 
+    display: block;
+    width: 95%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #CCCCCC;
+    background-color: transparent;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    resize: none;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
-	outline: none;
-	border-bottom-color: #ff0000;
+    outline: none;
+    border-bottom-color: #ff0000;
 }
 
 input[type="submit"] {
-	background-color: #333333;
-	color: #FFFFFF;
-	padding: 15px 40px;
-	border: none;
-	border-radius: 0;
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: 500;
-	letter-spacing: 1px;
-	transition: all 0.3s ease-in-out;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
 }
 
 input[type="submit"]:hover {
-	background-color: #FFFFFF;
-	color: #333333;
+    background-color: #FFFFFF;
+    color: #333333;
 }
 
 /* formulaire */
@@ -235,61 +235,163 @@ footer p {
 @media only screen and (max-width: 600px) {
 
     /* nav barre en colonne */
-    
-        .logo{
-            width: 200px;
-        }
-    
-        nav ul{
-            background: rgba(255, 255, 255, 0.5);
-            -webkit-backdrop-filter: blur(5px); /* pour Safari, iOS et d'autres navigateurs basés sur WebKit */
-            backdrop-filter: blur(5px); /* pour les autres navigateurs */
-            justify-content: center;
-            top: 0;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 100vh;
-            padding: 0%;
-            margin-left: -100%;
-            transition: all 0.5s ease;
-        }
-    
-        header nav ul li {
-            display: flex;
-            justify-content: center;
-            font-size: 34px;
-            border: none;
-        }
-        
-        header nav ul li a{
-            font-family: 'poppinss';
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            margin: 0px; 
-            display: block;
-            padding: 30px 40px;
-        }
-    
-        nav .mobile-menu{
-            margin-left: 0;
-        }
-    
-        header .menu-burger{
-            display: block;
-            position: absolute;
-            right: 5%;
-            top: 1%;
-            width: 100px;
-            filter: invert(100%) sepia(100%) hue-rotate(180deg) saturate(500%);
-            
-        }
-    
-        /* fin nav barre */
-    
-        /* corps */
-    
-    
-        /* corps */
+
+    .logo {
+        width: 200px;
     }
+
+    nav ul {
+        background: rgba(255, 255, 255, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        /* pour Safari, iOS et d'autres navigateurs basés sur WebKit */
+        backdrop-filter: blur(5px);
+        /* pour les autres navigateurs */
+        justify-content: center;
+        top: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding: 0%;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    header nav ul li {
+        display: flex;
+        justify-content: center;
+        font-size: 34px;
+        border: none;
+    }
+
+    header nav ul li a {
+        font-family: 'poppinss';
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        margin: 0px;
+        display: block;
+        padding: 30px 40px;
+    }
+
+    nav .mobile-menu {
+        margin-left: 0;
+    }
+
+    header .menu-burger {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 1%;
+        width: 100px;
+        filter: invert(100%) sepia(100%) hue-rotate(180deg) saturate(500%);
+
+    }
+
+    /* fin nav barre */
+
+    /* corps */
+
+
+    .container {
+        background: url(image/informatique.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: center;
+        background-attachment: fixed;
+        width: 100%;
+    }
+
+
+    /* formulaire */
+
+    form {
+        font-family: 'poppinss';
+        background-color: #FFFFFF;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+        margin: 0px 20px;
+    }
+
+    h1 {
+        font-family: 'poppinss';
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333333;
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-family: 'poppinss';
+        display: block;
+        margin-bottom: 5px;
+        color: #333333;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        font-family: 'poppinss';
+        display: block;
+        width: 95%;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid #CCCCCC;
+        background-color: transparent;
+        color: #333333;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: all 0.3s ease-in-out;
+        resize: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus {
+        outline: none;
+        border-bottom-color: #ff0000;
+    }
+
+    input[type="submit"] {
+        background-color: #333333;
+        color: #FFFFFF;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #FFFFFF;
+        color: #333333;
+    }
+
+    /* formulaire */
+
+
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+
+    /* corps */
+}
