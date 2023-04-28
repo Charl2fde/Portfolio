@@ -1,6 +1,6 @@
-*{
+* {
     margin: 0;
-    font-family: 'courier';    
+    font-family: 'courier';
 }
 
 @font-face {
@@ -8,7 +8,7 @@
     src: url(./fonts/Signature.otf);
 }
 
-@font-face{
+@font-face {
     font-family: 'poppinss';
     src: url(./fonts/Poppins/Poppins-Light.ttf);
 }
@@ -28,23 +28,23 @@
 
 /* Nav barre */
 
-.logo{
+.logo {
     width: 270px;
     height: auto;
 }
 
 
-header{
+header {
     position: relative;
     height: 80px;
     width: 100%;
-    background: rgb(0, 0, 0) ;
+    background: rgb(0, 0, 0);
     border-bottom: 1px solid;
     border-color: rgb(255, 255, 255, .9);
 }
 
 
-header nav{
+header nav {
     height: 80px;
     width: 100%;
     display: flex;
@@ -52,17 +52,17 @@ header nav{
     align-items: center;
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
     display: flex;
 }
 
-header nav ul li:hover{
+header nav ul li:hover {
     background: rgba(255, 255, 255, 0.5);
     transition: 0.6s;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: rgba(255, 0, 0);
 }
 
@@ -71,16 +71,16 @@ header nav ul li {
     border: 1px rgb(255, 255, 255, .1) solid;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    margin: 0px; 
+    margin: 0px;
     display: block;
     padding: 30px 40px;
- 
+
 }
 
-header .menu-burger{
+header .menu-burger {
     display: none;
     position: absolute;
     right: 5%;
@@ -95,7 +95,7 @@ header .menu-burger{
 
 /* body */
 
-.container{
+.container {
     background: url(image/informatique.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@ header .menu-burger{
     width: 100%;
 }
 
-.mid{
+.mid {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +112,7 @@ header .menu-burger{
 }
 
 
-p{
+p {
     text-align: center;
     font-size: 60px;
     color: white;
@@ -120,9 +120,9 @@ p{
     padding-bottom: 0px;
 }
 
-.c2fde{
+.c2fde {
     color: #EB0000;
-    font-family : 'signature';
+    font-family: 'signature';
     font-size: 130px;
 }
 
@@ -134,7 +134,7 @@ p{
     font-size: 16px;
 }
 
-.transparent-button:hover{
+.transparent-button:hover {
     color: rgba(255, 0, 0);
     background-color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
@@ -145,11 +145,11 @@ p{
 
 /* footer */
 
-footer{
+footer {
     display: flex;
     justify-content: right;
     align-items: center;
-    background: rgb(0, 0, 0) ;
+    background: rgb(0, 0, 0);
     border-top: 1px solid;
     border-color: rgb(255, 255, 255, .9);
     height: 80px;
@@ -157,7 +157,7 @@ footer{
 
 }
 
-footer p{
+footer p {
     color: white;
     margin-right: 30px;
     padding: 0%;
@@ -172,69 +172,69 @@ footer p{
 
 @media only screen and (max-width: 600px) {
 
-/* nav barre en colonne */
+    /* nav barre en colonne */
 
-.logo {
-    width: 200px;
-}
+    .logo {
+        width: 200px;
+    }
 
-nav ul {
-    background: rgba(255, 255, 255, 0.5);
-    -webkit-backdrop-filter: blur(5px);
-    /* pour Safari, iOS et d'autres navigateurs basés sur WebKit */
-    backdrop-filter: blur(5px);
-    /* pour les autres navigateurs */
-    justify-content: center;
-    top: 0;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    padding: 0%;
-    margin-left: -100%;
-    transition: all 0.5s ease;
-}
+    nav ul {
+        background: rgba(255, 255, 255, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        /* pour Safari, iOS et d'autres navigateurs basés sur WebKit */
+        backdrop-filter: blur(5px);
+        /* pour les autres navigateurs */
+        justify-content: center;
+        top: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding: 0%;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
 
-header nav ul li {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 34px;
-    border: none;
-}
+    header nav ul li {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 34px;
+        border: none;
+    }
 
-header nav ul li a {
-    font-family: 'poppinss';
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    margin: 0px;
-    display: block;
-    padding: 30px 40px;
-}
+    header nav ul li a {
+        font-family: 'poppinss';
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        margin: 0px;
+        display: block;
+        padding: 30px 40px;
+    }
 
-nav .mobile-menu {
-    margin-left: 0;
-}
+    nav .mobile-menu {
+        margin-left: 0;
+    }
 
-header .menu-burger {
-    display: block;
-    position: absolute;
-    right: 5%;
-    top: 10%;
-    width: 100px;
-    filter: invert(100%) sepia(100%) hue-rotate(180deg) saturate(500%);
-}
+    header .menu-burger {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        width: 100px;
+        filter: invert(100%) sepia(100%) hue-rotate(180deg) saturate(500%);
+    }
 
-/* fin nav barre */
+    /* fin nav barre */
 
     /* corps */
 
-    .container{
+    .container {
         background-position: center;
     }
 
-    p{
+    p {
         text-align: center;
         font-size: 50px;
         line-height: 1.5;
@@ -243,13 +243,13 @@ header .menu-burger {
         padding-bottom: 0px;
     }
 
-    .mid{
+    .mid {
         padding-bottom: 40%;
     }
-    
-    .c2fde{
+
+    .c2fde {
         color: #EB0000;
-        font-family : 'signature';
+        font-family: 'signature';
         font-size: 150px;
         line-height: 1;
     }
@@ -258,10 +258,10 @@ header .menu-burger {
         display: none;
     }
 
-    body.overflow-hidden{
+    body.overflow-hidden {
         overflow: hidden;
     }
-    
+
 
     /* corps */
 }

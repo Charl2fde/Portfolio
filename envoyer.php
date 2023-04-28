@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindParam(':message', $message);
     $stmt->execute();
 
-    // Adresse email du destinataire
+// Adresse email du destinataire
 $to = "charlesdefde@gmail.com";
 
 // Sujet de l'email
