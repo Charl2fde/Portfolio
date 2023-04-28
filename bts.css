@@ -410,7 +410,7 @@ footer p {
     h3 {
         font-size: 35px;
         color: transparent;
-        background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+        background: linear-gradient(to right, #000000, #ff0000);
         -webkit-background-clip: text;
         background-clip: text;
         text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
@@ -418,6 +418,7 @@ footer p {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
+    
 
     .SLAM {
         display: flex;
