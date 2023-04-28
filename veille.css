@@ -423,36 +423,181 @@ footer p {
 
   /* corps */
 
-  .container {
-    background-position: center;
+  .Veille {
+    padding: 20px 20px;
+    padding-bottom: none;
+    background-color: #ffffff;
+    font-family: 'poppinss';
   }
 
-  p {
-    text-align: center;
+  .pres {
     font-size: 40px;
-    color: white;
-    padding-top: 40%;
-    padding-bottom: 0px;
+    color: transparent;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+    margin-right: 0%;
+    margin: 10px 10px 5px 10px;
   }
 
-  .mid {
-    padding-bottom: 40%;
+  .Veille p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+    color: #666666;
+    text-indent: 60px;
   }
 
-  .c2fde {
-    color: #EB0000;
-    font-family: 'signature';
-    font-size: 110px;
+  /* Style de l'Introduction */
+
+  .Introduction {
+    padding: 20px 20px;
+    padding-top: none;
+    background-color: #F5F5F5;
+    font-family: 'poppinss';
   }
 
-  .transparent-button {
-    display: none;
+  .Introduction h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 30px;
+    margin-top: 90px;
   }
+
+  .Introduction h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+
+  .Introduction p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #666666;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
 
   body.overflow-hidden {
     overflow: hidden;
   }
 
+  /* 1ère partie */
+
+  .partie1 {
+    background-color: #ffffff;
+    padding: 20px 20px;
+    font-family: 'poppinss';
+  }
+
+  .partie1 h2 {
+    font-size: 40px;
+    color: transparent;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+    margin-right: 0%;
+    text-align: left;
+  }
+
+  .partie1 h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #008080;
+    text-align: center;
+  }
+
+  .partie1 p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 60px;
+  }
+
+  /* 2ème partie  */
+
+  .partie2 {
+    background-color: #F5F5F5;
+    padding: 20px 20px;
+    font-family: 'poppinss';
+  }
+
+  .partie2 h2 {
+    font-size: 40px;
+    color: transparent;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+    margin-right: 0%;
+    text-align: left;
+  }
+
+  .partie2 h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #008080;
+    text-align: center;
+  }
+
+  .partie2 p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 60px;
+  }
+
+  /* 3ème partie  */
+
+  .partie3 {
+    background-color: #ffffff;
+    padding: 20px 20px;
+    font-family: 'poppinss';
+    padding-bottom: 20px;
+  }
+
+  .partie3 h2 {
+    font-size: 40px;
+    color: transparent;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+    margin-right: 0%;
+    text-align: left;
+  }
+
+  .partie3 h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #008080;
+    text-align: center;
+  }
+
+  .partie3 p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 60px;
+  }
 
   /* corps */
 }
