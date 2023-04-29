@@ -920,45 +920,5 @@ footer p {
 
 @media only screen and (min-width: 2560px) {
  
-    /* Nav barre */
- 
- .logo {
-     width: 15%;
-     height: auto;
- }
- 
- 
- header {
-     position: relative;
-     height: 10%;
-     width: 100%;
-     background: rgb(0, 0, 0);
-     border-bottom: 1px solid;
-     border-color: rgb(255, 255, 255, .9);
- }
- 
- 
- header nav {
-     height: 100%;
-     width: 100%;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
- 
- header nav ul li {
-     font-size: 36px;
-     border: 1px rgb(255, 255, 255, .1) solid;
- }
- 
- header nav ul li a {
-     text-decoration: none;
-     color: rgb(255, 255, 255);
-     margin: 0px;
-     display: block;
-     padding: 50px 50px;
- 
- }
- 
- /* fin nav barre */
+    
 }

@@ -123,3 +123,60 @@ header .menu-burger {
 
     /* fin nav barre */
 }
+
+@media only screen and (min-width: 2560px) {
+ 
+    .logo {
+        width: 450px;
+        height: auto;
+    }
+    
+    
+    header {
+        position: static;
+        height: 180px;
+        width: 100%;
+        background: rgb(0, 0, 0);
+        border-bottom: 1px solid;
+        border-color: rgb(255, 255, 255, .9);
+    }
+    
+    
+    header nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    header nav ul li:hover {
+        background: rgba(255, 255, 255, 0.5);
+        transition: 0.6s;
+    }
+    
+    header nav ul li a:hover {
+        color: rgba(255, 0, 0);
+    }
+    
+    header nav ul li {
+        font-size: 18px;
+        border: 1px rgb(255, 255, 255, .1) solid;
+    }
+    
+    header nav ul li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+        display: block;
+        padding: 70px 50px;
+        font-size: 35px;
+    }
+
+    /* fin nav barre */
+}
