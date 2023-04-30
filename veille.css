@@ -492,3 +492,226 @@ footer p {
 
   /* corps */
 }
+
+
+@media only screen and (min-width: 2560px) {
+  /* titre */
+
+  #veilleNum {
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-size: 90px;
+    color: white;
+    text-shadow: 0px 0px 20px #fff;
+  }
+
+  /* titre  */
+
+  /*---- ---------corps---------------- */
+
+  .Veille {
+    padding: 80px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  .pres {
+    font-size: 60px;
+    color: transparent;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+    margin-right: 40%;
+    font-family: 'poppinss';
+  }
+
+  .Veille p {
+    font-size: 35px;
+    line-height: 150%;
+    color: #666666;
+    font-family: 'poppinss';
+  }
+
+  /* Style de l'Introduction */
+
+  .Introduction {
+    padding: 80px;
+    padding-top: 150px;
+    background-color: #F5F5F5;
+  }
+
+  .Introduction h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 30px;
+    font-family: 'poppinss';
+  }
+
+  .Introduction h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    font-family: 'poppinss';
+  }
+
+  .Introduction p {
+    font-size: 35px;
+    line-height: 150%;
+    color: #666666;
+    margin-bottom: 20px;
+    font-family: 'poppinss';
+  }
+
+  /* 1ère partie */
+
+  .partie1 {
+    background-color: #ffffff;
+    padding: 50px;
+    font-family: 'poppinss';
+  }
+
+  .partie1 h2 {
+    font-size: 60px;
+    color: transparent;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+    margin-right: 40%;
+    font-family: 'poppinss';
+  }
+
+  .partie1 h3 {
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #008080;
+    font-family: 'poppinss';
+  }
+
+  .partie1 p {
+    font-size: 35px;
+    line-height: 150%;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: 'poppinss';
+  }
+
+  /* 2ème partie  */
+
+  .partie2 {
+    background-color: #F5F5F5;
+    padding: 50px;
+    font-family: 'poppinss';
+  }
+
+  .partie2 h2 {
+    font-size: 60px;
+    color: transparent;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+    margin-right: 40%;
+    font-family: 'poppinss';
+  }
+
+  .partie2 h3 {
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #008080;
+    font-family: 'poppinss';
+  }
+
+  .partie2 p {
+    font-size: 35px;
+    line-height: 150%;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: 'poppinss';
+  }
+
+  /* 3ème partie  */
+
+  .partie3 {
+    background-color: #ffffff;
+    padding: 50px;
+    padding-bottom: 20px;
+    font-family: 'poppinss';
+  }
+
+  .partie3 h2 {
+    font-size: 60px;
+    color: transparent;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+    margin-right: 40%;
+    font-family: 'poppinss';
+  }
+
+  .partie3 h3 {
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #008080;
+    font-family: 'poppinss';
+  }
+
+  .partie3 p {
+    font-size: 35px;
+    line-height: 150%;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: 'poppinss';
+  }
+
+  /* conclusion  */
+
+  .conclusion {
+    background-color: #F5F5F5;
+    padding: 50px;
+    padding-top: 120px;
+    font-family: 'poppinss';
+  }
+
+  .conclusion h3 {
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #008080;
+    font-family: 'poppinss';
+  }
+
+  .conclusion p {
+    font-size: 35px;
+    line-height: 150%;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: 'poppinss';
+  }
+
+  /* barre progressive */
+
+  #progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 10px;
+    background-image: linear-gradient(to right, #ffffff, #ff0000);
+    z-index: 9999;
+    transition: width 0.3s ease;
+}
+}

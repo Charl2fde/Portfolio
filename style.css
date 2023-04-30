@@ -226,4 +226,17 @@ footer p {
     }
 
     /* footer */
+
+    /* barre progressive */
+
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 10px;
+    background-image: linear-gradient(to right, #ffffff, #ff0000);
+    z-index: 9999;
+    transition: width 0.3s ease;
+}
 }
