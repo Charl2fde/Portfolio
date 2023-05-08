@@ -32,17 +32,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindParam(':message', $message);
     $stmt->execute();
 
-    // Envoi d'un email de notification
+    // Récupère les données du formulaire
+$nom = $_POST["nom"];
+$prenom = $_POST["prenom"];
+$email = $_POST["email"];
+$telephone = $_POST["telephone"];
+$message = $_POST["message"];
+
+// Crée le sujet du message avec le label "portfolio"
+$sujet = "Portfolio - Nouveau message de $nom $prenom";
+
+// Prépare et exécute la requête d'insertion
+$stmt = $pdo->prepare("INSERT INTO contacts (nom, prenom, email, telephone, message) VALUES (:nom, :prenom, :email, :telephone, :message)");
+$stmt->bindParam(':nom', $nom);
+$stmt->bindParam(':prenom', $prenom);
+$stmt->bindParam(':email', $email);
+$stmt->bindParam(':telephone', $telephone);
+$stmt->bindParam(':message', $message);
+$stmt->execute();
+
+// Envoie l'e-mail
 $to = "charlesdefde@gmail.com";
-$subject = "Nouveau message du portfolio !";
-$body = "Nom: $nom\n\nPrénom: $prenom\n\nEmail: $email\n\nTéléphone: $telephone\n\nMessage: $message";
-$headers = "From: $email";
+$headers = "From: $nom $prenom <$email>\r\n";
+$headers .= "Reply-To: $email\r\n";
+$headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+$headers .= "X-Priority: 1\r\n";
+$headers .= "X-MSMail-Priority: High\r\n";
+$headers .= "X-Sender: $email\r\n";
+$headers .= "Return-Path: $email\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$headers .= "Subject: $sujet\r\n";
 
-// Utilisation de la fonction mail() de PHP pour envoyer l'email
-mail($to, $subject, $body, $headers);
+$message = "Nom : $nom<br>";
+$message .= "Prénom : $prenom<br>";
+$message .= "Email : $email<br>";
+$message .= "Téléphone : $telephone<br>";
+$message .= "Message : $message<br>";
 
-$headers = "From: $email\r\nReply-To: $email";
-mail($to, $subject, $body, $headers);
+mail($to, $sujet, $message, $headers);
+
 
 }
 
