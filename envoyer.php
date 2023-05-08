@@ -32,29 +32,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindParam(':message', $message);
     $stmt->execute();
 
-// Adresse email du destinataire
+    // Envoi d'un email de notification
 $to = "charlesdefde@gmail.com";
+$subject = "Nouveau message du portfolio !";
+$body = "Nom: $nom\n\nPrénom: $prenom\n\nEmail: $email\n\nTéléphone: $telephone\n\nMessage: $message";
+$headers = "From: $email";
 
-// Sujet de l'email
-$subject = "Nouveau message depuis ton Portfolio !";
+// Utilisation de la fonction mail() de PHP pour envoyer l'email
+mail($to, $subject, $body, $headers);
 
-// Corps de l'email
-$email_body = "Nom : " . $nom . "\n";
-$email_body .= "Prénom : " . $prenom . "\n";
-$email_body .= "Email : " . $email . "\n";
-$email_body .= "Téléphone : " . $telephone . "\n";
-$email_body .= "Message : " . $message . "\n";
+$headers = "From: $email\r\nReply-To: $email";
+mail($to, $subject, $body, $headers);
 
-// Entêtes de l'email
-$headers = "From: " . $email . "\r\n" . // remplace l'adresse email de l'expéditeur
-"Reply-To: " . $email . "\r\n" .
-"X-Mailer: PHP/" . phpversion();
-
-// Envoi de l'email
-if(mail($to, $subject, $email_body, $headers)) {
-    echo "Votre message a été envoyé avec succès.";
-} else {
-    echo "Une erreur est survenue lors de l'envoi de votre message.";
 }
-}
+
 ?>
