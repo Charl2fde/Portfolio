@@ -51,27 +51,23 @@ $stmt->bindParam(':telephone', $telephone);
 $stmt->bindParam(':message', $message);
 $stmt->execute();
 
-// Envoie l'e-mail
-$to = "charlesdefde@gmail.com";
-$headers = "From: $nom $prenom <$email>\r\n";
-$headers .= "Reply-To: $email\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-$headers .= "X-Priority: 1\r\n";
-$headers .= "X-MSMail-Priority: High\r\n";
-$headers .= "X-Sender: $email\r\n";
-$headers .= "Return-Path: $email\r\n";
-$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-$headers .= "Subject: $sujet\r\n";
+ // Envoie l'e-mail
+ $to = "charlesdefde@gmail.com";
+ $headers = "From: $nom $prenom <$email>\r\n";
+ $headers .= "Reply-To: $email\r\n";
+ $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+ $headers .= "X-Priority: 1\r\n";
+ $headers .= "X-MSMail-Priority: High\r\n";
+ $headers .= "X-Sender: $email\r\n";
+ $headers .= "Return-Path: $email\r\n";
+ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+ $headers .= "Subject: $sujet\r\n";
+ $message = "Nom : $nom<br>Prénom : $prenom<br>E-mail : $email<br>Téléphone : $telephone<br>Message :<br>$message";
+ mail($to, $sujet, $message, $headers);
 
-$message = "Nom : $nom<br>";
-$message .= "Prénom : $prenom<br>";
-$message .= "Email : $email<br>";
-$message .= "Téléphone : $telephone<br>";
-$message .= "Message : $message<br>";
-
-mail($to, $sujet, $message, $headers);
-
-
+ // Redirige l'utilisateur vers une page de confirmation
+ header('Location: index.html');
+ exit();
 }
 
 ?>
