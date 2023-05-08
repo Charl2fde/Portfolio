@@ -32,42 +32,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindParam(':message', $message);
     $stmt->execute();
 
-    // Récupère les données du formulaire
-$nom = $_POST["nom"];
-$prenom = $_POST["prenom"];
-$email = $_POST["email"];
-$telephone = $_POST["telephone"];
-$message = $_POST["message"];
+// Adresse email du destinataire
+$to = "charlesdefde@gmail.com";
 
-// Crée le sujet du message avec le label "portfolio"
-$sujet = "Portfolio - Nouveau message de $nom $prenom";
+// Sujet de l'email
+$subject = "Nouveau message depuis ton Portfolio !";
 
-// Prépare et exécute la requête d'insertion
-$stmt = $pdo->prepare("INSERT INTO contacts (nom, prenom, email, telephone, message) VALUES (:nom, :prenom, :email, :telephone, :message)");
-$stmt->bindParam(':nom', $nom);
-$stmt->bindParam(':prenom', $prenom);
-$stmt->bindParam(':email', $email);
-$stmt->bindParam(':telephone', $telephone);
-$stmt->bindParam(':message', $message);
-$stmt->execute();
+// Corps de l'email
+$email_body = "Nom : " . $nom . "\n";
+$email_body .= "Prénom : " . $prenom . "\n";
+$email_body .= "Email : " . $email . "\n";
+$email_body .= "Téléphone : " . $telephone . "\n";
+$email_body .= "Message : " . $message . "\n";
 
- // Envoie l'e-mail
- $to = "charlesdefde@gmail.com";
- $headers = "From: $nom $prenom <$email>\r\n";
- $headers .= "Reply-To: $email\r\n";
- $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
- $headers .= "X-Priority: 1\r\n";
- $headers .= "X-MSMail-Priority: High\r\n";
- $headers .= "X-Sender: $email\r\n";
- $headers .= "Return-Path: $email\r\n";
- $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
- $headers .= "Subject: $sujet\r\n";
- $message = "Nom : $nom<br>Prénom : $prenom<br>E-mail : $email<br>Téléphone : $telephone<br>Message :<br>$message";
- mail($to, $sujet, $message, $headers);
+// Entêtes de l'email
+$headers = "From: " . $email . "\r\n" . // remplace l'adresse email de l'expéditeur
+"Reply-To: " . $email . "\r\n" .
+"X-Mailer: PHP/" . phpversion();
 
- // Redirige l'utilisateur vers une page de confirmation
- header('Location: index.html');
- exit();
+// Envoi de l'email
+if(mail($to, $subject, $email_body, $headers)) {
+    echo "Votre message a été envoyé avec succès.";
+} else {
+    echo "Une erreur est survenue lors de l'envoi de votre message.";
 }
-
+}
 ?>
