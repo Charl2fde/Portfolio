@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->execute();
 
 // Adresse email du destinataire
-$to = "charlesdefde@gmail.com";
+$to = "portfolioc2fde@googlegroups.com";
 
 // Sujet de l'email
 $subject = "Nouveau message depuis ton Portfolio !";
