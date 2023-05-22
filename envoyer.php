@@ -48,8 +48,7 @@ $email_body .= "Message : " . $message . "\n";
 // Entêtes de l'email
 $headers = "From: " . $email . "\r\n" . // remplace l'adresse email de l'expéditeur
 "Reply-To: " . $email . "\r\n" .
-"X-Mailer: PHP/" . phpversion().
-"X-PM-Message-Stream: Portfolio\r\n";
+"X-Mailer: PHP/" . phpversion();
 
 // Envoi de l'email
 if(mail($to, $subject, $email_body, $headers)) {
