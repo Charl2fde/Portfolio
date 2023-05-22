@@ -153,11 +153,37 @@ ul {
     box-shadow: 5px 0 5px rgba(0, 0, 0, 0.3);
 }
 
-#li-projet {
-    list-style: disc;
-    padding: 20px 0;
-    font-family: 'poppinss';
-}
+#div-projet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #titre{
+    font-weight: bold;
+    font-size: 19px;
+    padding-bottom: 5px;
+  }
+  
+  .projet {
+    width: 30%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid red;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projet img {
+    width: 100%;
+    max-height: 190px;
+  }
+  
+  .projet p {
+    margin: 0;
+    text-align: justify;
+  }
+
 
 /*-------------------------------------------------- Compétences ------------------------------------------  */
 
