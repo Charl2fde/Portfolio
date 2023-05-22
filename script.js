@@ -44,4 +44,33 @@ menuBurger.addEventListener('click', function () {
   body.classList.toggle('overflow-hidden');
 });
 
+// menu déroulant veille numérique
+
+document.addEventListener('DOMContentLoaded', function () {
+  var dropdownButtons = document.querySelectorAll('.menu-der .der-content');
+
+  dropdownButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var dropdownContent = this.nextElementSibling;
+      // var icon = this.querySelector('i');
+
+      // Vérifier si le menu est déjà ouvert
+      if (dropdownContent.style.display === 'block') {
+        dropdownContent.style.display = 'none';
+      } else {
+        closeAllDropdowns();
+        dropdownContent.style.display = 'block';
+      }
+    });
+  });
+function closeAllDropdowns() {
+    var dropdownContents = document.querySelectorAll('.menu-der .description');
+    // var icons = document.querySelectorAll('.blog-dropdown .dropdown-btn i');
+
+    dropdownContents.forEach(function (content) {
+      content.style.display = 'none';
+    });
+  }
+});
+
 
