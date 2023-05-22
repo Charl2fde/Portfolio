@@ -32,29 +32,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindParam(':message', $message);
     $stmt->execute();
 
-// Adresse email du destinataire
-$to = "charlesdefde@gmail.com";
-
-// Sujet de l'email
-$subject = "Nouveau message depuis ton Portfolio !";
-
-// Corps de l'email
-$email_body = "Nom : " . $nom . "\n";
-$email_body .= "Prénom : " . $prenom . "\n";
-$email_body .= "Email : " . $email . "\n";
-$email_body .= "Téléphone : " . $telephone . "\n";
-$email_body .= "Message : " . $message . "\n";
-
-// Entêtes de l'email
-$headers = "From: " . $email . "\r\n" . // remplace l'adresse email de l'expéditeur
-"Reply-To: " . $email . "\r\n" .
-"X-Mailer: PHP/" . phpversion();
-
-// Envoi de l'email
-if(mail($to, $subject, $email_body, $headers)) {
-    echo "Votre message a été envoyé avec succès.";
-} else {
-    echo "Une erreur est survenue lors de l'envoi de votre message.";
-}
-}
+    if (mysqli_query($connexion, $sql)) {
+        // Envoi des données par e-mail
+        $destinataire = 'charlesdefde@gmail.com';
+        $sujet = 'Nouveau formulaire soumis';
+        $contenu = "Nom: $nom\n";
+        $contenu .= "Prénom: $prenom\n";
+        $contenu .= "E-mail: $email\n";
+        $contenu .= "Téléphone: $telephone\n";
+        $contenu .= "Message: $message\n";
+    
+        // Envoyer l'e-mail
+        mail($destinataire, $sujet, $contenu);
+    
+        // Redirection vers une page de confirmation
+        header("Location: index.html");
+    } else {
+        echo "Erreur lors de l'insertion des données : " . mysqli_error($connexion);
+    }
+    
+    // Fermer la connexion à la base de données
+    mysqli_close($connexion);
 ?>
