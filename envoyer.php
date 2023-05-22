@@ -41,8 +41,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contenu .= "Téléphone: $telephone\n";
     $contenu .= "Message: $message\n";
 
-    // Envoyer l'e-mail
-    mail($destinataire, $sujet, $contenu);
+    // Générer une adresse e-mail expéditeur basée sur le nom et le prénom
+    $expediteur = $prenom . ' ' . $nom . ' <' . $email . '>';
+
+    // En-têtes du mail
+    $headers = "From: $expediteur\r\n";
+    $headers .= "Reply-To: $email\r\n";
+
+    // Envoyer l'e-mail avec les en-têtes personnalisés
+    mail($destinataire, $sujet, $contenu, $headers);
 
     // Redirection vers une page de confirmation
     header("Location: index.html");
