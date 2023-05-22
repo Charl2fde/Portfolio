@@ -42,8 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contenu .= "Message: $message\n";
 
     // En-têtes du mail
-    $headers = "From: $nom $prenom <$email>\r\n";
-    $headers .= "Reply-To: $email\r\n";
+    $headers = "From: $email" . "\r\n";
 
     // Envoyer l'e-mail avec les en-têtes personnalisés
     $result = mail($destinataire, $sujet, $contenu, $headers);
