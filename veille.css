@@ -112,6 +112,7 @@
   background-color: #F5F5F5;
   display: flex;
   flex-direction: row;
+  padding-bottom: 100px;
 }
 
 .Introduction h2 {
@@ -167,10 +168,6 @@
   gap: 2rem;
 }
 
-.menu-der p{
-  text-align: center;
-}
-
 .der-content{
   border: 1px solid red;
   border-right: none;
@@ -178,11 +175,18 @@
   border-top: none;
   padding: 30px 0px;
   background-color: white;
+  border-radius: 6px 6px 0 0;
 }
-
 
 .description{
   display: none;
+  text-align: justify;
+}
+
+h5{
+  align-items: center;
+  font-family: 'poppinss';
+  font-size: 25px;
 }
 
 
