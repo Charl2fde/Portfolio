@@ -168,6 +168,11 @@
   gap: 2rem;
 }
 
+.menu-der :hover{
+  background: rgba(255, 0, 0, 0.5);
+  transition: 0.6s;
+}
+
 .der-content{
   border: 1px solid red;
   border-right: none;
