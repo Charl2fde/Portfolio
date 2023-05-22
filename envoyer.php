@@ -41,11 +41,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contenu .= "Téléphone: $telephone\n";
     $contenu .= "Message: $message\n";
 
-    // Envoyer l'e-mail
-    mail($destinataire, $sujet, $contenu);
+    // En-têtes du mail
+    $headers = "From: $nom $prenom <$email>\r\n";
+    $headers .= "Reply-To: $email\r\n";
 
-    // Redirection vers une page de confirmation
-    header("Location: index.html");
+    // Envoyer l'e-mail avec les en-têtes personnalisés
+    $result = mail($destinataire, $sujet, $contenu, $headers);
+
+    if ($result) {
+        // Redirection vers une page de confirmation
+        header("Location: index.html");
+    } else {
+        echo "Erreur lors de l'envoi du mail.";
+    }
 }
 ?>
 
