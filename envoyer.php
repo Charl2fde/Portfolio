@@ -1,8 +1,8 @@
 <?php
 // Connexion à la base de données
 $host = "localhost";
-$dbname = "id20606176_form_portfolio";
-$username = "id20606176_charles";
+$dbname = "id21545320_form_portfolio";
+$username = "id21545320_charles";
 $password = "Chatelard0300$";
 
 try {
